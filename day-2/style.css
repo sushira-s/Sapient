@@ -1,0 +1,28 @@
+.box {
+    border: 1px solid #000;
+    margin: 5px;
+    padding: 5px;
+}
+.box:nth-of-type(odd){
+    background-color:green;
+}
+.box p:nth-of-type(2){
+    color: red;
+}
+.box:hover{
+    background-color: yellow;
+}
+.container::before{
+    content: "I am created by CSS.I got padding 10px,background color orange and border 2px solid geen";
+    display: block;
+    padding: 10px;
+    background-color: orange;
+    border: 2px solid green;
+}
+.container::after{
+    content: "I am created by CSS.I got padding 10px,background color orange and border 2px solid geen";
+    display: block;
+    padding: 10px;
+    background-color: orange;
+    border: 2px solid green;
+}
